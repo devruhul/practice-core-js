@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice JS</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    #postContainer {
+        margin-top: 20px;
+       /* use flex */
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+    }
+    .post {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Hello JS</h1>
+    <!-- show the button with on click -->
+    <button onclick="fetchData()">Fetch Data</button>
+    <button onclick="displayPosts()">Display Posts</button>
+    <div id="postContainer">
+        <!-- post data will be shown here -->
+        
+    </div>
+
+    <script src="api.js"></script>
+</body>
+</html>
